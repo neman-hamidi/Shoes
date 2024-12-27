@@ -1,0 +1,11 @@
+section:nth-of-type(1) {
+  background-image: url("/images/banner.jpg");
+  background-position: 54rem 0rem;
+}
+.text-section1 {
+  color: black;
+  position: absolute;
+  right: 10rem;
+  bottom: 15rem;
+}
+

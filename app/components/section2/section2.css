@@ -1,0 +1,30 @@
+section:nth-of-type(2) {
+  background-image: url("/images/products_bg.jpg");
+  background-position: 65rem 6rem;
+}
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  margin: 4rem auto;
+}
+.intervalSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.section2 div p {
+  margin-bottom: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
