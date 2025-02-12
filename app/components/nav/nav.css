@@ -20,9 +20,6 @@
 .nav div:nth-child(1) {
   margin-bottom: 4rem;
 }
-.nav div:nth-child(3) {
-  margin-top: 4rem;
-}
 .nav {
   position: fixed;
   z-index: 2;
@@ -99,8 +96,8 @@
   height: 3rem;
 }
 .animate-nav {
-  animation: a 2s linear .5s 1;
-  -webkit-animation: a 2s linear .5s 1;
+  animation: a 2s linear 0.5s 1;
+  -webkit-animation: a 2s linear 0.5s 1;
   transition: 1s linear;
   -webkit-transition: 1s linear;
   -moz-transition: 1s linear;
@@ -109,30 +106,30 @@
 }
 @keyframes a {
   0% {
-  transform: translate(0px);
-  -webkit-transform: translate(0px);
-  -moz-transform: translate(0px);
-  -ms-transform: translate(0px);
-  -o-transform: translate(0px);
-}
-50%{
-  transform: translate(-40px);
-  -webkit-transform: translate(-40px);
-  -moz-transform: translate(-40px);
-  -ms-transform: translate(-40px);
-  -o-transform: translate(-40px);
-}
+    transform: translate(0px);
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
+  }
+  50% {
+    transform: translate(-40px);
+    -webkit-transform: translate(-40px);
+    -moz-transform: translate(-40px);
+    -ms-transform: translate(-40px);
+    -o-transform: translate(-40px);
+  }
   100% {
-  transform: translate(0px);
-  -webkit-transform: translate(0px);
-  -moz-transform: translate(0px);
-  -ms-transform: translate(0px);
-  -o-transform: translate(0px);
-}
+    transform: translate(0px);
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
+  }
 }
 .animate-nav2 {
-  animation: a 2s linear .75s 1;
-  -webkit-animation: a 2s linear .75s 1;
+  animation: a 2s linear 0.75s 1;
+  -webkit-animation: a 2s linear 0.75s 1;
   transition: 1s linear;
   -webkit-transition: 1s linear;
   -moz-transition: 1s linear;

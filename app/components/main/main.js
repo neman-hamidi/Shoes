@@ -13,7 +13,7 @@ export default function main() {
     }
   
   return (
-    <div>
+    <>
       <input type="radio" name="item" onChange={handleChange} defaultChecked={isFirstLoad} value="checked" id="section1" />
       <input type="radio" name="item" onChange={handleChange} value="checked" id="section2" />
       <input type="radio" name="item" onChange={handleChange} value="checked" id="section3" />
@@ -24,6 +24,6 @@ export default function main() {
       <Section4/>
       {/* <!-- Fix the white space when scrolling two sections at the time--> */}
       <div className="cover"></div>
-    </div>
+    </>
   );
 }

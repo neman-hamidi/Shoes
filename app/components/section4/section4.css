@@ -2,8 +2,7 @@ section:nth-of-type(4) {
   background-image: url("/images/contact_bg.jpg");
   background-position: 32rem 6rem;
 }
-.section4 {
-}
+
 .div-section4 {
   width: 80%;
   margin: 2rem auto;
@@ -26,9 +25,9 @@ section:nth-of-type(4) {
   gap: 1rem;
 }
 .icon-section4 {
-    color: #464646;
+  color: #464646;
 }
 .question-section4 {
-    width: 80%;
-    margin: 2rem auto;
+  width: 80%;
+  margin: 2rem auto;
 }

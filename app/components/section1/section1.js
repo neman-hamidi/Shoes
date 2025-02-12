@@ -29,10 +29,12 @@ export default function section1() {
         <img src="/images/shoes.png" alt="" />
       </div>
       <div className="text-section1">
-        <p className="fw-bold fs-1">ویژه</p>
-        <p className="py-3 fs-2 fw-bold text-danger">کفش ورزشی ایر مکس</p>
+        <h3 className="fw-bold fs-1">ویژه</h3>
+        <h3 className="py-3 fs-2 fw-bold text-danger">کفش ورزشی ایر مکس</h3>
         <p className="fs-4">یکی از محبوب ترین کفش های سال</p>
-        <button type="submit" className="btn-1">مشاهده بیشتر</button>
+        <button type="submit" className="btn-1">
+          مشاهده بیشتر
+        </button>
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
-
 import "./section2.css";
+import { products } from "./Text";
 export default function section2() {
   const [number, setNumber] = useState(0);
   const [number2, setNumber2] = useState(0);
@@ -20,7 +20,7 @@ export default function section2() {
         }
         return prev + 1;
       });
-    }, 280);
+    }, 60);
 
     const interval2 = setInterval(() => {
       setNumber2((prev) => {
@@ -30,7 +30,7 @@ export default function section2() {
         }
         return prev + 1;
       });
-    }, 450);
+    }, 95);
 
     const interval3 = setInterval(() => {
       setNumber3((prev) => {
@@ -40,7 +40,7 @@ export default function section2() {
         }
         return prev + 1;
       });
-    }, 100);
+    }, 30);
 
     return () => {
       clearInterval(interval3);
@@ -57,15 +57,15 @@ export default function section2() {
         </div>
         <div className="intervalSection text-center">
           <div>
-            <p className="fs-1">{number}</p>
+            <h3 className="fs-1">{number}</h3>
             <p>کفش تحویل داده شد</p>
           </div>
           <div>
-            <p className="fs-1">{number2}</p>
+            <h3 className="fs-1">{number2}</h3>
             <p>مقالات جدید</p>
           </div>
           <div>
-            <p className="fs-1">{number3}</p>
+            <h3 className="fs-1">{number3}</h3>
             <p>مشتریان خوشحال</p>
           </div>
         </div>
@@ -87,47 +87,15 @@ export default function section2() {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img1.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Solamon Sneakers</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img2.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Nike Air Mag</p>
-              <button className="btn-1">مشاهده جزئیات</button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img3.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Air Jordan</p>
-              <button className="btn-1">مشاهده جزئیات</button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img4.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Adidas Consortium</p>
-              <button className="btn-1">مشاهده جزئیات</button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img5.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Nike Air Mag</p>
-              <button className="btn-1">مشاهده جزئیات</button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="div-swiper text-center">
-              <img src="/images/product-img6.png" alt="" />
-              <p className="text-center mt-4 fw-bold">Solamon Sneakers</p>
-              <button className="btn-1">مشاهده جزئیات</button>
-            </div>
-          </SwiperSlide>
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <div className="div-swiper text-center">
+                <img src={product.imgSrc} alt={product.name} />
+                <p className="text-center mt-4 fw-bold">{product.name}</p>
+                <button className="btn-1">مشاهده جزئیات</button>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
